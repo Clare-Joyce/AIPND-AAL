@@ -1,0 +1,75 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:            Water_bottle_01.jpg  label:               water bottle
+ 2 key:                     Cat_01.jpg  label:                        cat
+ 3 key:      Labrador_retriever_02.jpg  label:         labrador retriever
+ 4 key:      Labrador_retriever_01.jpg  label:         labrador retriever
+
+     MATCH:
+
+           Water_bottle_01.jpg: 
+Real:               water bottle   Classifier:                   water bottle
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat
+
+     Labrador_retriever_01.jpg: 
+Real:         labrador retriever   Classifier:             labrador retriever
+
+ NOT A MATCH:
+
+     Labrador_retriever_02.jpg: 
+Real:         labrador retriever   Classifier:                      chihuahua
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+           Water_bottle_01.jpg: 
+Real:               water bottle   Classifier:                   water bottle  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+     Labrador_retriever_01.jpg: 
+Real:         labrador retriever   Classifier:             labrador retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+     Labrador_retriever_02.jpg: 
+Real:         labrador retriever   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not Dog Images    :   2
+ 
+pct_correct_dogs    : 100.000000
+pct_correct_notdogs : 100.000000
+pct_correct_breed   : 50.000000
+pct_label_matches   : 75.000000
+
+INCORRECT Dog Breed Assignment:
+Real:         labrador retriever   Classifier:                      chihuahua
+
+** Total Elapsed Runtime: 0:0:0
