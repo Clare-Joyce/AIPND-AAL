@@ -1124,3 +1124,34 @@ def chunker(iterable, size):
 for chunk in chunker(range(25), 4):
     print(list(chunk))
 ```
+
+#### Lesson 6: Scripting
+
+* #### Errors and Exceptions
+    - Syntax Errors: occur when you don't use correct syntax and Python doesn't know how to run your code
+    - Exceptions: occur when Python runs into unexpected situations while executing your code and can happen even if you used correct syntax.
+
+* #### Handling Errors
+    - try: the only mandatory clause in a try statement
+    - except: runs if code in the try block fails
+    - else: runs if the code in the try block does not fail
+    - finally: runs this block under any conditions before leaving the try statement.
+
+* #### Importing local Scripts
+    - modules: python files with definitions and statements
+    - To avoid running executable statements in a script when it's imported as a module in another script, include these lines in an if `__name__ == "__main__"` block
+    - Avoid using `from module import *`
+    - A package is a module that conatins sub modules and imported as `import package_name.submodule_name`
+    - third party libraries can be installed with `pip`
+    - *Note:* `pip install -r requirements.txt`
+    - Good programmers master the task of finding information quickly
+
+
+#### Lesson 6: Intro to OOP
+* #### Procedural Programming(PP) vs OOP
+    - PP: list of instructions beig executed
+    - OOP: Programs built around objects
+    - objects have characteristics and actions.
+
+    ![pp_vs_oop](OOP/PP_vs_OOP.png)
+

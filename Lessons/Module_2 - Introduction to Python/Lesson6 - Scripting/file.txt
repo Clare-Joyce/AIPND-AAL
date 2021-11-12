@@ -1,0 +1,2 @@
+This is an example file.
+You can use it to study reading and writing files in python
